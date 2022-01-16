@@ -26,6 +26,8 @@ body {
 }
 
 .stats-card {
+    display: flex;
+    flex-direction: column;
     width: 87%;
     max-width: 350px;
     min-width: 300px;
@@ -100,4 +102,43 @@ body {
     font-size: 12px;
     font-family: 'lexend deca', sans-serif;
     color: var(--statsHeadingColor);
+}
+
+@media (min-width: 1440px) {
+    .stats-card {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 445px;
+        width: 1110px;
+        max-width: unset;
+        min-width: unset;
+        text-align: left;
+    }
+
+    .text-content {
+        padding: 32px 110px 32px 75px;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .description {
+        margin: 26px 0;
+        line-height: 1.7;
+    }
+
+    .stats-card img {
+        content: url('../images/image-header-desktop.jpg') !important;
+        width: auto;
+        height: 100%;
+    }
+
+    .stats {
+        padding-right: 35px;
+        margin: 40px 0;
+        display: flex;
+        justify-content: space-between;
+    }
 }

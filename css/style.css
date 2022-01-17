@@ -39,27 +39,14 @@ body {
 }
 
 .img-wrapper {
-    position: relative;
     line-height: 0;
-    /* background: var(--accentColor); */
-}
-
-.img-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: var(--accentColor);
-    opacity: .45;
-
 }
 
 .stats-card img {
     width: 100%;
-    /* mix-blend-mode: overlay; */
-    /* border-radius: 10px 10px 0 0; */
+    mix-blend-mode: multiply;
+    opacity: .75;
 }
 
 .text-content {
@@ -130,7 +117,6 @@ body {
     }
 
     .stats-card img {
-        content: url('../images/image-header-desktop.jpg') !important;
         width: auto;
         height: 100%;
     }
